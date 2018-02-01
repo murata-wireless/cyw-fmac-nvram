@@ -1,0 +1,116 @@
+# CYW43012 Rev C0 WLCSP Murata module EVB
+# Rev History
+#  1. 6/22/2017 copied from bcm bcm943012mdcspad.txt
+#  2. 6/22/2017 updated boardtype, boardrev, macadd
+#  3. 7/10/2017 udpated swctrlmap*
+NVRAMRev=$Rev: 351687 $
+sromrev=11
+cckdigfilttype=4 
+cckpwroffset0=3
+bphyscale=0x20
+boardflags3=0x40000100
+vendid=0x14e4 
+devid=0xA804 
+manfid=0x2d0 
+prodid=0x052e 
+#macaddr=00:90:4c:2a:80:00
+macaddr=00:90:4c:2a:9${maclo12}
+#macaddr=00:90:4c:2a:80:80
+mac_clkgating=1
+nocrc=1
+boardtype=0x0842 
+boardrev=0x1100  
+xtalfreq=37400
+boardflags2=0xc0000000 
+boardflags=0x00000000
+etmode=0x11
+extpagain2g=2
+extpagain5g=2
+ccode=0 
+regrev=0 
+antswitch = 0
+rxgains2gelnagaina0=0
+rxgains2gtrisoa0=15
+rxgains2gtrelnabypa0=0
+rxgains5gelnagaina0=0
+rxgains5gtrisoa0=9
+rxgains5gtrelnabypa0=0
+pdgain5g=0
+pdgain2g=0
+tworangetssi2g=0
+tworangetssi5g=0
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+tssipos5g=0
+tssipos2g=0
+femctrl=17
+subband5gver=4
+pa2ga0=-108,5627,-638
+# pa5ga0=-23,5933,-815,-29,5959,-814,-60,6093,-813,-50,6414,-836
+pa5ga0=-41,6533,-726,-29,6654,-746,9,6914,-772,12,7008,-806
+pdoffset40ma0=0
+pdoffset80ma0=0
+lowpowerrange2g=0
+lowpowerrange5g=0
+ed_thresh2g=-63
+ed_thresh5g=-63
+swctrlmap_2g=0x10101010,0x20202020,0x10101010,0x414040,0x3ff
+swctrlmapext_2g=0x00000000,0x01000100,0x01000100,0x010000,0x301
+swctrlmap_5g=0x80808080,0x00000000,0x80808080,0x404040,0x3ff
+swctrlmapext_5g=0x01000100,0x01000100,0x00000000,0x000100,0x303
+ulpnap=0
+ulpadc=1
+ssagc_en=0
+ds1_nap=0
+spurcan_ch_list_MHz=2422,2427,2432,2437,2462,2467,2472
+spurcan_sp_freq_KHz=9000,4000,-1000,-6000,6400,1400,-3600
+spurcan_NumSpur=7
+epacal2g=0
+epacal5g=0
+papdcck=0
+epacal2g_mask=0x3fff
+maxp2ga0=82
+ofdmlrbw202gpo=0x0077
+dot11agofdmhrbw202gpo=0x8888
+mcsbw202gpo=0x99999999
+#mcsbw402gpo=0x99555533
+maxp5ga0=82,82,82,82
+mcsbw205glpo=0x99999999
+mcsbw205gmpo=0x99999999
+mcsbw205ghpo=0x99999999
+femctrlwar=0
+use5gpllfor2g=1
+pt5db_gaintbl=0
+
+txwbpapden=1
+wb_rxattn=0x0203
+wb_txattn=0x0203
+wb_papdcalidx=0x0808
+wb_papdcalidx_5g=0x00080808
+wb_eps_offset=0x01bd01a8
+wb_eps_offset_5g=0x01bd01bd
+wb_bbmult=0x2040
+wb_bbmult_5g=0x00202020
+wb_calref_db=0x1c2e
+wb_tia_gain_mode=0x0606
+wb_txbuf_offset=0x1e1e
+wb_frac_del=0x6991
+wb_g_frac_bits=0xab
+
+
+nb_rxattn=0x0404
+nb_txattn=0x0404
+nb_papdcalidx=0x1414
+nb_eps_offset=0x01d701d7
+nb_bbmult=0x5A5A
+nb_tia_gain_mode=0x0000
+# AvVmid_c0=6,100,3,141,3,141,3,141,3,141
+AvVmid_c0=6,100,7,70,7,70,7,70,7,70
+
+tssisleep_en=0x5
+lpflags=0x28
+lpo_select=4
+# muxenab defined to enable OOB IRQ. Level sensitive interrupt via WL_HOST_WAKE line. 
+muxenab=0x1

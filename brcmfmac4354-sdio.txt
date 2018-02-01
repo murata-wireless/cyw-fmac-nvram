@@ -1,0 +1,140 @@
+# bcm94354wlcspMS_MP_A1_7_10_82_21_12052013.txt -- 12/5/2013 by Broadcom Corporation
+# Use with 7_10_82_21 -- Murata 1BB BCM4354 WLCSP 11AC Module ES1.5
+#BCM4354 WLCSP module for iPA, eLNA board with SDIO for production package
+NVRAMRev=$Rev: 373428 $
+sromrev=11
+boardrev=0x1105
+## boardtype is subject to change
+boardtype=0x070c
+boardflags=0x12401001
+#enable eLNA both 2G/5G
+boardflags2=0x00802000
+boardflags3=0x40000108
+#boardnum=57410 
+macaddr=00:90:4c:16:70:01
+ccode=0
+regrev=0
+antswitch=0
+pdgain5g=4
+pdgain2g=4
+tworangetssi2g=0
+tworangetssi5g=0
+femctrl=10
+vendid=0x14e4
+#devid=0x43a3
+## for 4354a1
+devid=0x43df
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+otpimagesize=502
+xtalfreq=37400
+rxgains2gelnagaina0=3
+rxgains2gtrisoa0=5
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=3
+rxgains5gtrisoa0=5
+rxgains5gtrelnabypa0=1
+rxgains5gmelnagaina0=3
+rxgains5gmtrisoa0=5
+rxgains5gmtrelnabypa0=1
+rxgains5ghelnagaina0=3
+rxgains5ghtrisoa0=5
+rxgains5ghtrelnabypa0=1
+rxgains2gelnagaina1=3
+rxgains2gtrisoa1=5
+rxgains2gtrelnabypa1=1
+rxgains5gelnagaina1=3
+rxgains5gtrisoa1=5
+rxgains5gtrelnabypa1=1
+rxgains5gmelnagaina1=3
+rxgains5gmtrisoa1=5
+rxgains5gmtrelnabypa1=1
+rxgains5ghelnagaina1=3
+rxgains5ghtrisoa1=5
+rxgains5ghtrelnabypa1=1
+rxchain=3
+txchain=3
+aa2g=3
+aa5g=3
+agbg0=2
+agbg1=2
+aga0=2
+aga1=2
+tssipos2g=1
+extpagain2g=2
+tssipos5g=1
+extpagain5g=2
+tempthresh=255
+tempoffset=255
+rawtempsense=0x1ff
+pa2ga0=-139,6041,-707
+pa2ga1=-150,5970,-707
+pa5ga0=-194,6069,-739,-188,6137,-743,-185,5931,-725,-171,5898,-715
+pa5ga1=-190,6248,-757,-190,6275,-759,-190,6225,-757,-184,6131,-746
+#pa5ga0=-222,5110,-638,-223,5044,-632,-200,5349,-666,-212,4807,-606
+#pa5ga1=-219,5232,-646,-219,5124,-632,-215,5364,-670,-223,4895,-614
+## Target power CASE#735433
+# 2G: 17dBm - CCK, 16dBm - OFDM 6-18, MCS0-2, 14dBm - OFDM 24-54, MCS3-6, 13dBm - MCS7-8
+# 5G 20M: 16dBm - OFDM 6-18, MCS0-2, 14dBm - OFDM 24-54, MCS3-6, 13dBm - MCS7-8
+# 5G 40M: 15dBm - MCS 0-2, 13dBm - MCS3-6, 12dBm - MCS7-9
+# 5G 80M: 14dBm - MCS 0-2, 12dBm - MCS3-6, 11dBm - MCS7-9
+maxp2ga0=74
+maxp5ga0=74,74,74,74
+maxp2ga1=74
+maxp5ga1=74,74,74,74
+subband5gver=0x4
+pdoffsetcckma0=0x4
+pdoffsetcckma1=0x4
+pdoffset40ma0=0x0000
+pdoffset80ma0=0x0000
+pdoffset40ma1=0x0000
+pdoffset80ma1=0x0000
+cckbw202gpo=0x0000
+cckbw20ul2gpo=0x0000
+mcsbw202gpo=0x88866662
+#mcsbw402gpo=0x99644422
+dot11agofdmhrbw202gpo=0x6666
+ofdmlrbw202gpo=0x0022
+mcsbw205glpo=0x88866662
+mcsbw405glpo=0xaaa88884
+mcsbw805glpo=0xcccaaaa6
+mcsbw205gmpo=0x88866662
+mcsbw405gmpo=0xaaa88884
+mcsbw805gmpo=0xcccaaaa6
+mcsbw205ghpo=0x88866662
+mcsbw405ghpo=0xaaa88884
+mcsbw805ghpo=0xcccaaaa6
+mcslr5glpo=0x0000
+mcslr5gmpo=0x0000
+mcslr5ghpo=0x0000
+sb20in40hrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb40and80hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb40and80hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+sb40and80hr5ghpo=0x0
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb40and80lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb40and80lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+sb40and80lr5ghpo=0x0
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+phycal_tempdelta=255
+temps_period=15
+temps_hysteresis=15
+AvVmid_c0=2,140,2,145,2,145,2,145,2,145
+AvVmid_c1=2,140,2,145,2,145,2,145,2,145
+rssicorrnorm_c0=4,4
+rssicorrnorm_c1=4,4
+rssicorrnorm5g_c0=4,6,6,4,6,6,3,5,6,4,6,6
+rssicorrnorm5g_c1=4,5,7,4,5,7,3,5,7,3,5,6
+## SWCTRLMAP using AN29223K and AN29222K
+swctrlmap_5g=0x02020202,0x05050404,0x04040000,0x000000,0x047
+swctrlmap_2g=0x10081008,0x28300820,0x08200000,0x803020,0x0ff
+# muxenab defined to enable OOB IRQ. Level sensitive interrupt via WL_HOST_WAKE line. 
+muxenab=0x11
