@@ -85,14 +85,14 @@ use5gpllfor2g=1
 pt5db_gaintbl=0
 
 txwbpapden=1
-wb_rxattn=0x0203
+wb_rxattn=0x0303
 wb_txattn=0x0203
 wb_papdcalidx=0x0808
-wb_papdcalidx_5g=0x00080808
-wb_eps_offset=0x01bd01a8
-wb_eps_offset_5g=0x01bd01bd
+wb_papdcalidx_5g=0x00101010
+wb_eps_offset=0x01ba01a8
+wb_eps_offset_5g=0x01ba01bc
 wb_bbmult=0x2040
-wb_bbmult_5g=0x00202020
+wb_bbmult_5g=0x00303030
 wb_calref_db=0x1c2e
 wb_tia_gain_mode=0x0606
 wb_txbuf_offset=0x1e1e
@@ -112,5 +112,9 @@ AvVmid_c0=6,100,7,70,7,70,7,70,7,70
 tssisleep_en=0x5
 lpflags=0x28
 lpo_select=4
+
+paprrmcsgamma2g=450,500,550,600,675,950,950,950,950,950,950,950
+paprrmcsgamma5g20=450,500,550,600,800,950,1100,1100,1100,1100,1100,1100
+#paprdis=1
 # muxenab defined to enable OOB IRQ. Level sensitive interrupt via WL_HOST_WAKE line. 
 muxenab=0x1
