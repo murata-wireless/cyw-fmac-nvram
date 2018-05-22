@@ -3,14 +3,15 @@ Note that the FMAC driver loads a specific NVRAM filename when coming up: "brcmf
 This means that for any Murata modules which share the same chipset, we can only have one NVRAM file present in the default folder: "/lib/firmware/brcm".
 The following module NVRAM default files are included in this folder: 
 
-Cypress Chipset		Default		Options		Notes		
-=============		=======		=======		=====
-CYW4356			1CX		N/A		FMAC driver supports this chipset but not tested on i.MX6/7 Morty release.
-CYW4354			1BB		N/A
-CYW43455		1MW		1LC, 1HK
-CYW43012		1LV		N/A		
-CYW43430/CYW4343W	1DX		1LN
-CYW4339			ZP		1CK
-CYW43340/CYW43341	1BW		N/A
-CYW43362		SN8000		N/A		
+Cypress Chipset		Default		Options		WLAN Interface    Devices Supported		
+=============		=======		=======		==============    =====================
+CYW4356			1CX		N/A		PCIe              802.11a/b/g/n/ac MIMO
+CYW4354			1BB		N/A             SDIO              802.11a/b/g/n/ac MIMO
+CYW43455		1MW		1LC, 1HK        SDIO              802.11a/b/g/n/ac
+CYW43012		1LV		N/A             SDIO              802.11a/b/g/n/ac
+CYW43430/CYW4343W	1DX		1LN             SDIO              802.11b/g/n
+CYW4339			ZP		1CK             SDIO              802.11a/b/g/n/ac
+CYW43340/CYW43341	1BW		N/A             SDIO              802.11b/g/n
+CYW43362		SN8000		N/A	        SDIO              802.11b/g/n
+CYW43364                1FX             N/A             SDIO              802.11b/g/n
 	
