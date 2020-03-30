@@ -3,6 +3,8 @@
 #  1. 6/22/2017 copied from bcm bcm943012mdcspad.txt
 #  2. 6/22/2017 updated boardtype, boardrev, macadd
 #  3. 7/10/2017 udpated swctrlmap*
+#  4. 8/7/2019 copied from Krishna's 1LV (Co-Ex added with switch map mod and RSSI compensation is removed
+
 NVRAMRev=$Rev: 351687 $
 sromrev=11
 cckdigfilttype=4
@@ -18,11 +20,11 @@ macaddr=00:90:4c:2a:9${maclo12}
 #macaddr=00:90:4c:2a:80:80
 mac_clkgating=1
 nocrc=1
-boardtype=0x0842
-boardrev=0x1100
+boardtype=0x084f
+boardrev=0x1102
 xtalfreq=37400
 boardflags2=0xc0000000
-boardflags=0x00000000
+boardflags=0x00000001
 etmode=0x11
 extpagain2g=2
 extpagain5g=2
@@ -57,9 +59,9 @@ lowpowerrange2g=0
 lowpowerrange5g=0
 ed_thresh2g=-63
 ed_thresh5g=-63
-swctrlmap_2g=0x10101010,0x20202020,0x10101010,0x444242,0x3ff
-swctrlmapext_2g=0x00000100,0x01000100,0x01000100,0x000000,0x301
-swctrlmap_5g=0x80808080,0x00000000,0x80808080,0x444242,0x3ff
+swctrlmap_2g=0x10101010,0x20202020,0x10101010,0x442020,0x3ff
+swctrlmapext_2g=0x01000100,0x01000100,0x01000100,0x000000,0x301
+swctrlmap_5g=0x80808080,0x00000000,0x80808080,0x442020,0x381
 swctrlmapext_5g=0x01000100,0x01000100,0x00000000,0x000000,0x303
 ulpnap=0
 ulpadc=1
@@ -119,7 +121,7 @@ paprrmcsgamma5g20=450,500,550,600,800,950,1100,1100,1100,1100,1100,1100
 #paprdis=1
 
 # muxenab defined to enable OOB IRQ. Level sensitive interrupt via WL_HOST_WAKE line. 
-muxenab=0x1
+muxenab=0x01
 
 #SW-Diversity Related parameters
 swdiv_en=1 #To enable SW-DIV feature
@@ -133,4 +135,3 @@ swdiv_antmap5g_main=1
 swdiv_snrlim=10000 #Only enable sw_div if the snr on present antenna is less than 10000/8=1250
 swdiv_thresh=3000 #No.of rxpkts threshold
 swdiv_snrthresh=24 #Difference between antenna's snr is greater than 24/8=3dB, then shift the antennas
-
