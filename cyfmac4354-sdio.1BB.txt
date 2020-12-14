@@ -1,31 +1,29 @@
-# bcm94354wlcspMS_MP_A1_7_10_82_21_12052013.txt -- 12/5/2013 by Broadcom Corporation
-# Use with 7_10_82_21 -- Murata 1BB BCM4354 WLCSP 11AC Module ES1.5
-#BCM4354 WLCSP module for iPA, eLNA board with SDIO for production package
-NVRAMRev=$Rev: 373428 $
-sromrev=11
-boardrev=0x1105
-## boardtype is subject to change
+# Rev History
+#  1. 11/18/2017 muxenab is changed from 0x10 to 0x11
+
+boardrev=0x1101
 boardtype=0x070c
 boardflags=0x12401001
-#enable eLNA both 2G/5G
 boardflags2=0x00802000
-boardflags3=0x40000108
-#boardnum=57410 
+#boardflags3=0x08000000 means force use of external LPO and 0x04000000 means force use of internal LPO.
+#boardflags3=0x40000109 modified on Oct. 11, 2018, by monk
+boardflags3=0x48000109
 macaddr=00:90:4c:16:70:01
-ccode=0
+ccode=ALL
 regrev=0
 antswitch=0
 pdgain5g=4
 pdgain2g=4
-tworangetssi2g=0
-tworangetssi5g=0
+tworangetssi2g=1
+tworangetssi5g=1
+olpc_thresh=1
+#olpc_thresh=0
+lowpowerrange2g=0
+lowpowerrange5g=0
 femctrl=10
 vendid=0x14e4
-#devid=0x43a3
-## for 4354a1
 devid=0x43df
 manfid=0x2d0
-#prodid=0x052e
 nocrc=1
 otpimagesize=502
 xtalfreq=37400
@@ -57,28 +55,31 @@ rxchain=3
 txchain=3
 aa2g=3
 aa5g=3
-agbg0=2
-agbg1=2
-aga0=2
-aga1=2
+ag0=0
+ag1=0
+agbg0=0
+agbg1=0
+aga0=0
+aga1=0
 tssipos2g=1
 extpagain2g=2
 tssipos5g=1
 extpagain5g=2
-tempthresh=255
+tempthresh=120
 tempoffset=255
 rawtempsense=0x1ff
-pa2ga0=-139,6041,-707
-pa2ga1=-150,5970,-707
-pa5ga0=-194,6069,-739,-188,6137,-743,-185,5931,-725,-171,5898,-715
-pa5ga1=-190,6248,-757,-190,6275,-759,-190,6225,-757,-184,6131,-746
-#pa5ga0=-222,5110,-638,-223,5044,-632,-200,5349,-666,-212,4807,-606
-#pa5ga1=-219,5232,-646,-219,5124,-632,-215,5364,-670,-223,4895,-614
-## Target power CASE#735433
-# 2G: 17dBm - CCK, 16dBm - OFDM 6-18, MCS0-2, 14dBm - OFDM 24-54, MCS3-6, 13dBm - MCS7-8
-# 5G 20M: 16dBm - OFDM 6-18, MCS0-2, 14dBm - OFDM 24-54, MCS3-6, 13dBm - MCS7-8
-# 5G 40M: 15dBm - MCS 0-2, 13dBm - MCS3-6, 12dBm - MCS7-9
-# 5G 80M: 14dBm - MCS 0-2, 12dBm - MCS3-6, 11dBm - MCS7-9
+pa2ga0=-135,5984,-677
+pa2ga1=-149,5940,-689
+pa2ga2=-150,3653,-529
+pa2ga3=-148,3853,-550
+pa5ga0=0xff5a,0x17ea,0xfd27,0xff58,0x17f1,0xfd24,0xff4a,0x1751,0xfd2b,0xff51,0x1704,0xfd37
+pa5ga1=0xff4f,0x1874,0xfd11,0xff47,0x17e3,0xfd1b,0xff5a,0x1860,0xfd20,0xff4e,0x17de,0xfd1f
+pa5ga2=0xff5c,0xed4,0xfdc3,0xff7a,0xf9f,0xfdb0,0xff77,0xfec,0xfdaa,0xff6c,0xfaf,0xfdb5
+pa5ga3=0xff54,0xf42,0xfddb,0xff54,0xfee,0xfdbb,0xff57,0xfc3,0xfdc3,0xff46,0xef6,0xfdde
+pa2ga0.fab.4=-161,5896,-688
+pa2ga1.fab.4=-161,6005,-702
+pa5ga0.fab.4=-181,6051,-727,-183,6055,-730,-177,6030,-722,-177,6049,-723
+pa5ga1.fab.4=-185,6280,-745,-180,6206,-740,-178,5928,-714,-174,5963,-713
 maxp2ga0=74
 maxp5ga0=74,74,74,74
 maxp2ga1=74
@@ -86,6 +87,8 @@ maxp5ga1=74,74,74,74
 subband5gver=0x4
 pdoffsetcckma0=0x4
 pdoffsetcckma1=0x4
+pdoffsetcckma0.fab.4=0x0
+pdoffsetcckma1.fab.4=0x0
 pdoffset40ma0=0x0000
 pdoffset80ma0=0x0000
 pdoffset40ma1=0x0000
@@ -93,18 +96,17 @@ pdoffset80ma1=0x0000
 cckbw202gpo=0x0000
 cckbw20ul2gpo=0x0000
 mcsbw202gpo=0x88866662
-#mcsbw402gpo=0x99644422
-dot11agofdmhrbw202gpo=0x6666
+dot11agofdmhrbw202gpo=0x6642
 ofdmlrbw202gpo=0x0022
 mcsbw205glpo=0x88866662
-mcsbw405glpo=0xaaa88884
-mcsbw805glpo=0xcccaaaa6
+mcsbw405glpo=0xa9866663
+mcsbw805glpo=0xbb866665
 mcsbw205gmpo=0x88866662
-mcsbw405gmpo=0xaaa88884
-mcsbw805gmpo=0xcccaaaa6
+mcsbw405gmpo=0xa9866663
+mcsbw805gmpo=0xbb866665
 mcsbw205ghpo=0x88866662
-mcsbw405ghpo=0xaaa88884
-mcsbw805ghpo=0xcccaaaa6
+mcsbw405ghpo=0xa9866663
+mcsbw805ghpo=0xbb866665
 mcslr5glpo=0x0000
 mcslr5gmpo=0x0000
 mcslr5ghpo=0x0000
@@ -124,7 +126,7 @@ sb20in80and160lr5ghpo=0x0
 sb40and80lr5ghpo=0x0
 dot11agduphrpo=0x0
 dot11agduplrpo=0x0
-phycal_tempdelta=255
+phycal_tempdelta=25
 temps_period=15
 temps_hysteresis=15
 AvVmid_c0=2,140,2,145,2,145,2,145,2,145
@@ -133,8 +135,13 @@ rssicorrnorm_c0=4,4
 rssicorrnorm_c1=4,4
 rssicorrnorm5g_c0=4,6,6,4,6,6,3,5,6,4,6,6
 rssicorrnorm5g_c1=4,5,7,4,5,7,3,5,7,3,5,6
-## SWCTRLMAP using AN29223K and AN29222K
 swctrlmap_5g=0x02020202,0x05050404,0x04040000,0x000000,0x047
 swctrlmap_2g=0x10081008,0x28300820,0x08200000,0x803020,0x0ff
-# muxenab defined to enable OOB IRQ. Level sensitive interrupt via WL_HOST_WAKE line. 
 muxenab=0x11
+btc_mode=1
+btc_params84=7000
+btc_params10=20000
+btc_params8=45000
+cckdigfilttype=1
+paprdis=0
+ofdmfilttype=1
