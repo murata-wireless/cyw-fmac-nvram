@@ -35,7 +35,7 @@ extpagain2g=2
 maxp2ga0=74
 cckbw202gpo=0x0000
 ofdmlrbw202gpo=0x0022
-dot11agofdmhrbw202gpo=0x8888
+dot11agofdmhrbw202gpo=0x8882
 mcsbw202gpo=0xaaaaa666
 maxp5ga0=76,76,76,76
 mcsbw205glpo=0x99999955
@@ -110,5 +110,4 @@ ldo1=5
 cbfilttype=2
 xtal_swcapio=0x8855
 fdss_level_ch13=1,1
-# muxenab defined to enable OOB IRQ. Level sensitive interrupt via WL_HOST_WAKE line. 
 muxenab=0x10
