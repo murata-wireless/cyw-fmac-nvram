@@ -23,18 +23,18 @@ The following table lists out the "md5sum" for all the NVRAM files.
 --------------------------------------------------------------------
 |   File Name                 |         md5sum                     |
 |-----------------------------|------------------------------------|
-| cyfmac43430-sdio.1LN.txt    |   680f28b5bb6cc75cdba3a8d96151924d |
-| cyfmac4339-sdio.1CK.txt     |   4113e7f06ca64918cd01daffbbccb1b3 |
-| cyfmac43455-sdio.1LC.txt    |   02998f5b252734af60a04a6a3d341119 |
-| cyfmac43455-sdio.1MW.txt    |   01ca750418f4b4ad12635baf6b2644a7 |
-| cyfmac43362-sdio.SN8000.txt |   a77318277df2a4dab8dab6b7caa2b275 |
-| cyfmac43012-sdio.1LV.txt    |   84b035b040db08934dfd78cc600c3f7b |
-| cyfmac4339-sdio.ZP.txt      |   1da222f231c065361b0a16e0bfc5fe3a |
-| cyfmac43430-sdio.1FX.txt    |   680f28b5bb6cc75cdba3a8d96151924d |
-| cyfmac43455-sdio.1HK.txt    |   a94d36a14e427b05aee1b90da1a38e16 |
-| cyfmac4356-pcie.1CX.txt     |   d226c22a67b75ed08f7820e069b13ef3 |
-| cyfmac43340-sdio.1BW.txt    |   796c44600f7ebfad31d1a1ddf43e8f35 |
-| cyfmac43430-sdio.1DX.txt    |   680f28b5bb6cc75cdba3a8d96151924d |
-| cyfmac4354-sdio.1BB.txt     |   4a129f22cb26f7d5c2298b84c8b480f9 |
-| cyfmac54591-pcie.1XA.txt    |   0576859cf5bdf735cf353497b3037215 |
+| cyfmac43430-sdio.1LN.txt    |   3fece53a5dcb6ca66ba63fcae0510989 |
+| cyfmac4339-sdio.1CK.txt     |   bc0c8bb08a34efdeee85c26eae001277 |
+| cyfmac43455-sdio.1LC.txt    |   4b1d3d64dae4180c15a1df8d85c9cf8a |
+| cyfmac43455-sdio.1MW.txt    |   f5f5bd320388d3180ae8d436fcd063a3 |
+| cyfmac43362-sdio.SN8000.txt |   675f8049f4f064a5859629ee1fc1d85d |
+| cyfmac43012-sdio.1LV.txt    |   e14efe7bbe52af1719deba7afe5a4281 |
+| cyfmac4339-sdio.ZP.txt      |   7df2faa6c8b981c4bc4a54f613dad091 |
+| cyfmac43430-sdio.1FX.txt    |   3fece53a5dcb6ca66ba63fcae0510989 |
+| cyfmac43455-sdio.1HK.txt    |   e855115a09e07448c17b0909a8e54a30 |
+| cyfmac4356-pcie.1CX.txt     |   f08591b6318ee7f3f36644c2bb5483b3 |
+| cyfmac43340-sdio.1BW.txt    |   410b34f865d7b478bab23ec6858ec7f6 |
+| cyfmac43430-sdio.1DX.txt    |   3fece53a5dcb6ca66ba63fcae0510989 |
+| cyfmac4354-sdio.1BB.txt     |   c7a5bc11eeaf3cfb4c12c97c668c2499 |
+| cyfmac54591-pcie.1XA.txt    |   1bd2c7fcbff3e2082c848f29cb3e60c5 |
 --------------------------------------------------------------------
