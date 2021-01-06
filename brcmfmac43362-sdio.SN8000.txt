@@ -47,3 +47,4 @@ noise_cal_po_2g.fab.3=4
 sd_gpout=1
 sd_oobonly=1
 sd_gpval=1
+# End of NVRAM #
