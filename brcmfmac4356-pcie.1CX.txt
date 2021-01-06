@@ -145,3 +145,4 @@ swctrlmap_2g=0x140c140c,0x28300820,0x08200000,0x803020,0x0ff
 papdwar=4
 ## to improve current consumption in tx
 tssisleep_en=0x1f
+# End of NVRAM #
