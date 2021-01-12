@@ -103,4 +103,4 @@ ed_thresh2g=-77
 ed_thresh5g=-77
 #
 paparambwver=1
-# End of NVRAM #
+# End of NVRAM - do not remove this line #
