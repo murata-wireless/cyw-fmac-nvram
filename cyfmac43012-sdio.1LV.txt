@@ -139,4 +139,4 @@ swdiv_antmap5g_main=1
 swdiv_snrlim=10000 #Only enable sw_div if the snr on present antenna is less than 10000/8=1250
 swdiv_thresh=3000 #No.of rxpkts threshold
 swdiv_snrthresh=24 #Difference between antenna's snr is greater than 24/8=3dB, then shift the antennas
-# End of NVRAM #
+# End of NVRAM - do not remove this line #
