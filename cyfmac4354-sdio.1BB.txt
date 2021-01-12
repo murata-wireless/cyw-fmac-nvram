@@ -145,3 +145,4 @@ btc_params8=45000
 cckdigfilttype=1
 paprdis=0
 ofdmfilttype=1
+# End of NVRAM - do not remove this line #

@@ -41,3 +41,4 @@ muxenab=0x10
 #btc_params 8 45000
 #btc_params 10 20000
 #spurconfig=0x3
+# End of NVRAM - do not remove this line #
