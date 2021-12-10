@@ -11,8 +11,10 @@ CYW54591		1XA		N/A		PCIe              802.11a/b/g/n/ac MIMO
 CYW4356			1CX		N/A		PCIe              802.11a/b/g/n/ac MIMO
 CYW4354			1BB		N/A             SDIO              802.11a/b/g/n/ac MIMO		Strategic customer engagement only.
 CYW43455		1MW		1LC, 1HK        SDIO              802.11a/b/g/n/ac		1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only.
+CYW4373                 2AE		N/A		SDIO              802.11a/b/g/n/ac
 CYW43012		1LV		N/A             SDIO              802.11a/b/g/n/ac-friendly	"802.11ac friendly"; MAX 20 MHz Bandwidth.
 CYW43430/CYW4343W	1DX		1LN             SDIO              802.11b/g/n
+CYW43439                1YN		N/A		SDIO              802.11b/g/n
 CYW43364                1FX             N/A             SDIO              802.11b/g/n			Same WLAN core as 1DX.
 CYW4339			ZP		1CK             SDIO              802.11a/b/g/n/ac		Legacy module; No longer supported.
 CYW43340/CYW43341	1BW		N/A             SDIO              802.11b/g/n			Legacy module; No longer supported.
@@ -37,4 +39,7 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac43430-sdio.1DX.txt    |   ecee52eb58fd9921398ca5179e096949 |
 | cyfmac4354-sdio.1BB.txt     |   aa37432ae72808143a6be03399ca8244 |
 | cyfmac54591-pcie.1XA.txt    |   edb53ed8f965ed562163414ed3edc8af |
+| cyfmac43439-sdio.1YN.txt    |   089c2beac1eb951e0786ba7578503cec |
+| cyfmac4373-sdio.2AE.txt     |   21945f2bcb30511ec0b8798e56898614 |
+| cyfmac4373-sdio.2BC.txt     |   21945f2bcb30511ec0b8798e56898614 |
 --------------------------------------------------------------------
