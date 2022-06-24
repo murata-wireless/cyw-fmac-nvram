@@ -26,6 +26,7 @@ extpagain2g=0
 #PA parameters for 2.4GHz, measured at CHIP OUTPUT
 pa2ga0=-168,6777,-789
 AvVmid_c0=0x0,0xc8
+AvVmidIQcal=0x2,0xa8
 cckpwroffset0=5
 
 # PPR params
