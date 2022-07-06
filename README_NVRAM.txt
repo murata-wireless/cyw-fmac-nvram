@@ -22,24 +22,26 @@ CYW43362		SN8000		N/A	        SDIO              802.11b/g/n			Legacy module; No 
 
 
 The following table lists out the "md5sum" for all the NVRAM files.
---------------------------------------------------------------------
-|   File Name                 |         md5sum                     |
-|-----------------------------|------------------------------------|
-| cyfmac43430-sdio.1LN.txt    |   ecee52eb58fd9921398ca5179e096949 |
-| cyfmac4339-sdio.1CK.txt     |   d1333ee70479132ce264d3f0f2ed310b |
-| cyfmac43455-sdio.1LC.txt    |   be2ac7d996004743f8da872891cdf94c |
-| cyfmac43455-sdio.1MW.txt    |   03bf056ef1349b8791259f67e00c4bcc |
-| cyfmac43362-sdio.SN8000.txt |   3babb627c9b45d71ae3433a666863bf9 |
-| cyfmac43012-sdio.1LV.txt    |   20c7984a20b6ffcd15a491775cfee847 |
-| cyfmac4339-sdio.ZP.txt      |   073456f2106e2bb1f4564bdfcca2ca36 |
-| cyfmac43430-sdio.1FX.txt    |   ecee52eb58fd9921398ca5179e096949 |
-| cyfmac43455-sdio.1HK.txt    |   9b2a8bbfbf24a442d9013cd3a03ca4b1 |
-| cyfmac4356-pcie.1CX.txt     |   b75378deafbd4c984236cad39266e5eb |
-| cyfmac43340-sdio.1BW.txt    |   7a1a7dbfd18f8f7a9b4086c920b819a1 |
-| cyfmac43430-sdio.1DX.txt    |   ecee52eb58fd9921398ca5179e096949 |
-| cyfmac4354-sdio.1BB.txt     |   aa37432ae72808143a6be03399ca8244 |
-| cyfmac54591-pcie.1XA.txt    |   edb53ed8f965ed562163414ed3edc8af |
-| cyfmac43439-sdio.1YN.txt    |   f92125adc6425ce3f1c812e708580cb7 |
-| cyfmac4373-sdio.2AE.txt     |   21945f2bcb30511ec0b8798e56898614 |
-| cyfmac4373-sdio.2BC.txt     |   21945f2bcb30511ec0b8798e56898614 |
---------------------------------------------------------------------
+----------------------------------------------------------------------
+|   File Name                   |         md5sum                     |
+|-------------------------------|------------------------------------|
+| cyfmac43430-sdio.1LN.txt      |   ecee52eb58fd9921398ca5179e096949 |
+| cyfmac4339-sdio.1CK.txt       |   d1333ee70479132ce264d3f0f2ed310b |
+| cyfmac43455-sdio.1LC.txt      |   be2ac7d996004743f8da872891cdf94c |
+| cyfmac43455-sdio.1MW.txt      |   03bf056ef1349b8791259f67e00c4bcc |
+| cyfmac43362-sdio.SN8000.txt   |   3babb627c9b45d71ae3433a666863bf9 |
+| cyfmac43012-sdio.1LV.txt      |   20c7984a20b6ffcd15a491775cfee847 |
+| cyfmac4339-sdio.ZP.txt        |   073456f2106e2bb1f4564bdfcca2ca36 |
+| cyfmac43430-sdio.1FX.txt      |   ecee52eb58fd9921398ca5179e096949 |
+| cyfmac43455-sdio.1HK.txt      |   9b2a8bbfbf24a442d9013cd3a03ca4b1 |
+| cyfmac4356-pcie.1CX.txt       |   b75378deafbd4c984236cad39266e5eb |
+| cyfmac43340-sdio.1BW.txt      |   7a1a7dbfd18f8f7a9b4086c920b819a1 |
+| cyfmac43430-sdio.1DX.txt      |   ecee52eb58fd9921398ca5179e096949 |
+| cyfmac4354-sdio.1BB.txt       |   aa37432ae72808143a6be03399ca8244 |
+| cyfmac54591-pcie.1XA.txt      |   edb53ed8f965ed562163414ed3edc8af |
+| cyfmac43439-sdio.1YN.txt      |   f92125adc6425ce3f1c812e708580cb7 |
+| cyfmac4373-sdio.2AE.txt       |   21945f2bcb30511ec0b8798e56898614 |
+| cyfmac4373-sdio.2BC.txt       |   21945f2bcb30511ec0b8798e56898614 |
+| cyfmac54591-sdio.2ant.2BZ.txt |   ee2a0ad92718be1dcaebfd63a54e74bd | 
+| cyfmac54591-sdio.3ant.2BZ.txt |   904195ac03b4db831ec7f12481785ab4 | 
+----------------------------------------------------------------------
