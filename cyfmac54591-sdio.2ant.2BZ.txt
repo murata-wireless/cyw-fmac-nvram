@@ -202,7 +202,7 @@ rssi_delta_5gmu_c1=-1,1,-2,2,0,3
 fuart_pup_rx_cts=1
 seci_uart_gpios=0x08090a0b
 module_type=0x0
-muxenab=1
+muxenab=0x11
 adjpaldo=0x4
 
 #power per rate back off at high temperature
