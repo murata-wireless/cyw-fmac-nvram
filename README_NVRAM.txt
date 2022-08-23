@@ -6,16 +6,17 @@ This means that for any Murata modules which share the same chipset, we can only
 The following module NVRAM default files are included in this folder: 
 
 Cypress Chipset		Default		Options		WLAN Interface    Devices Supported	  	Notes
-===============		=======		=======		==============    =====================   	===============================================================
-CYW54591		1XA		N/A		PCIe              802.11a/b/g/n/ac MIMO
-CYW4356			1CX		N/A		PCIe              802.11a/b/g/n/ac MIMO
-CYW4354			1BB		N/A             SDIO              802.11a/b/g/n/ac MIMO		Strategic customer engagement only.
-CYW43455		1MW		1LC, 1HK        SDIO              802.11a/b/g/n/ac		1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only.
-CYW4373                 2AE		N/A		SDIO              802.11a/b/g/n/ac
-CYW43012		1LV		N/A             SDIO              802.11a/b/g/n/ac-friendly	"802.11ac friendly"; MAX 20 MHz Bandwidth.
-CYW43430/CYW4343W	1DX		1LN             SDIO              802.11b/g/n
-CYW43439                1YN		N/A		SDIO              802.11b/g/n
-CYW43364                1FX             N/A             SDIO              802.11b/g/n			Same WLAN core as 1DX.
+===============		=======		=======		==============    =====================   	==========================================================================================
+CYW54591		1XA		N/A		PCIe              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
+CYW54591		2BZ		N/A		SDIO              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
+CYW4356			1CX		N/A		PCIe              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
+CYW4354			1BB		N/A             SDIO              802.11a/b/g/n/ac MIMO		Strategic customer engagement only. Indoor/Station mode only
+CYW43455		1MW		1LC, 1HK        SDIO              802.11a/b/g/n/ac		1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only. Indoor/Station mode only
+CYW4373                 2AE		N/A		SDIO              802.11a/b/g/n/ac              Indoor/Station mode only
+CYW43012		1LV		N/A             SDIO              802.11a/b/g/n/ac-friendly	"802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
+CYW43430/CYW4343W	1DX		1LN             SDIO              802.11b/g/n                   Indoor/Station mode only
+CYW43439                1YN		N/A		SDIO              802.11b/g/n                   Indoor/Station mode only
+CYW43364                1FX             N/A             SDIO              802.11b/g/n			Same WLAN core as 1DX. Indoor/Station mode only
 CYW4339			ZP		1CK             SDIO              802.11a/b/g/n/ac		Legacy module; No longer supported.
 CYW43340/CYW43341	1BW		N/A             SDIO              802.11b/g/n			Legacy module; No longer supported.
 CYW43362		SN8000		N/A	        SDIO              802.11b/g/n			Legacy module; No longer supported.
@@ -42,6 +43,6 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac43439-sdio.1YN.txt      |   f92125adc6425ce3f1c812e708580cb7 |
 | cyfmac4373-sdio.2AE.txt       |   21945f2bcb30511ec0b8798e56898614 |
 | cyfmac4373-sdio.2BC.txt       |   21945f2bcb30511ec0b8798e56898614 |
-| cyfmac54591-sdio.2ant.2BZ.txt |   ee2a0ad92718be1dcaebfd63a54e74bd | 
-| cyfmac54591-sdio.3ant.2BZ.txt |   904195ac03b4db831ec7f12481785ab4 | 
+| cyfmac54591-sdio.2ant.2BZ.txt |   f9255018ed4954b96b8d1eda8bab1a0f | 
+| cyfmac54591-sdio.3ant.2BZ.txt |   ee1c0ab8a0ffbc4d8aad5ae21d006b9c | 
 ----------------------------------------------------------------------
