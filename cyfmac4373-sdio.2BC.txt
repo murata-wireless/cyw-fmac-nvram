@@ -1,23 +1,23 @@
 ##********************SUMMARY********************                      
-##Board Name: CYW94373EWLSDUSBS_Rev2.0                                          
-# Sample variables file for CYW94373EWLSDUSBS reference board  
-# 1. 04/30/2020 Intial release with new cyw4373e specific board ID and MAC address. Referenced to cyw94373wlsdusb_p307
-# 2. Adding new nvram for Rev2.0.  Migrated nvram from cyw94373ewlsdusbs_p100.txt by updating board name only.  
+##Board Name: cyw94373wlsdusb_p307                                          
+# Sample variables file for CYW94373 reference board  
+# 1. 1/23/2020 Copied from cyw94373wlsdusb_p306_paldo2p9v.txt and changed NVRAMRev and boardrev
+# 2. 1/23/2020 Changed the lpo_margin_frac as "boardflags3=0x48202100" and "ext_lpo_margin_frac=0"
 
 
-NVRAMRev=$Rev: 727958 $
+NVRAMRev=$Rev$
 sromrev=11
 vendid=0x14e4
 # 11ac Dual Band Device ID
 devid=0x4418
 manfid=0x2d0
-prodid=0x0885
-macaddr=00:90:4c:2d:92:38
+prodid=0x070f
+macaddr=00:90:4c:c5:12:38
 nocrc=1
 
 #  SSID
-boardtype=0x885
-boardrev=0x1200
+boardtype=0x83d
+boardrev=0x1307
 xtalfreq=37400
 
 # X BFL_BTCOEXIST   = 0x00000001   This board implements Bluetooth coexistence
@@ -61,7 +61,7 @@ tssipos5g=1
 tssipos2g=1
 femctrl=0
 pa2ga0=-188,5529,-658
-pa5ga0=-153,5976,-697,-153,5784,-684,-155,5563,-667,-167,5748,-688
+pa5ga0=-153,5976,-697,-153,5784,-684,-155,5691,-677,-167,5748,-688
 pdoffsetcckma0=0xf
 pdoffset2g40ma0=0x9
 pdoffset40ma0=0xffff
@@ -69,57 +69,50 @@ pdoffset80ma0=0xeeee
 extpagain5g=2
 extpagain2g=2
 AvVmid_c0=1,130,0,160,0,160,0,160,0,160
-maxp2ga0=72
-maxp5ga0=60,60,60,60
-cckbw202gpo=0x0000
-dot11agofdmhrbw202gpo=0x0000
-ofdmlrbw202gpo=0x0000
-mcsbw202gpo=0x66322222
-mcsbw402gpo=0x88655333
-mcsbw205glpo=0xA7444220
-mcsbw205gmpo=0xA7444220
-mcsbw205ghpo=0xA7444220
-mcsbw405glpo=0xA8555332
-mcsbw405gmpo=0xA8555332
-mcsbw405ghpo=0xA8555332
-mcsbw805glpo=0xC9666332
-mcsbw805gmpo=0xC9666332
-mcsbw805ghpo=0xC9666332
-
-ppr_hitemp_offset=70,10
-#            idx 0: PPR temp thresh, default 150
-#            idx 1: PPR temp thresh hysteresis, default 15
-cckbw202gpo_ht=0x0000
-#            CCK high temp offset, 0.5dBm/step, rate(11,5.5,2,1Mbps)
-ofdmbw202gpo_ht=0x00000000
-#        2G OFDM temp offset, 0.5dBm/step, rate(54,48,36,24,18,12,9,6Mbps)
-mcsbw202gpo_ht=0x22222222
-#        2G BW20 VHT/HT temp offset, 0.5dBm/step, rate(C9,C8,M7,M6,M5,M4,M3,M2-0)
-ofdmbw205gpo_ht=0x22222222
-#        5G OFDM temp offset, 0.5dBm/step, rate(54,48,36,24,18,12,9,6Mbps)
-mcsbw205gpo_ht=0x22222222
-#        5G BW20 VHT/HT temp offset, 0.5dBm/step, rate(C9,C8,M7,M6,M5,M4,M3,M2-0)
-mcsbw405gpo_ht=0x22222222
-#        5G BW40 VHT/HT temp offset, 0.5dBm/step, rate(C9,C8,M7,M6,M5,M4,M3,M2-0)
-mcsbw805gpo_ht=0x22222222
-#        5G BW80 VHT/HT temp offset, 0.5dBm/step, rate(C9,C8,M7,M6,M5,M4,M3,M2-0)
+maxp2ga0=76
+maxp5ga0=70,70,70,70
+cckbw202gpo=0x2222
+dot11agofdmhrbw202gpo=0x4222
+ofdmlrbw202gpo=0x5522
+mcsbw202gpo=0xaa986655
+mcsbw402gpo=0xaa986655
+mcsbw205glpo=0xaa665523
+mcsbw205gmpo=0xaa665523
+mcsbw205ghpo=0xaa665523
+mcsbw405glpo=0x88665544
+mcsbw405gmpo=0x88665544
+mcsbw405ghpo=0x88665544
+mcsbw805glpo=0xDA887722
+mcsbw805gmpo=0xDA887722
+mcsbw805ghpo=0xDA887722
 
 # RF switch control
-swctrlmap_2g=0x00001131,0x00001131,0x00001131,0x313131,0x1ff
-swctrlmap_5g=0x00201131,0x40404040,0x00001131,0x313131,0x1ff
+#swctrlmap_2g=0x00001131,0x00001131,0x00001131,0x313131,0x1ff
+#swctrlmap_5g=0x00201131,0x40405171,0x00001131,0x313131,0x1ff
+#swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+#swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+
+
+# Murata China RF switch control
+swctrlmap_2g=0x00000000,0x00000000,0x00000000,0x000000,0x1ff
+swctrlmap_5g=0x10101010,0x40404040,0x00000000,0x000000,0x1ff
 swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+
+
 fem_table_init_val=0x1131,0x1131
 nb_papdcalidx=0x280f
 nb_txattn=0x0303
 nb_rxattn=0x0303
 nb_bbmult=0x3948
 nb_eps_offset=0x01e601ea
+
 # Enable Analytic PAPD mode
-#papdmode=1
+papdmode=1
+
 # RSSI adjust
 rssi_delta_2g_c0=-2,-2,-2,-2
-rssi_delta_5gl_c0=-2,-2,-2,-2,-1,-1
+rssi_delta_5gl_c0=-2,-2,-3,-3,-1,-1
 rssi_delta_5gml_c0=-2,-2,-3,-3,-1,-1
 rssi_delta_5gmu_c0=0,0,-1,-1,0,0
 rssi_delta_5gh_c0=-1,-1,-2,-2,0,0
@@ -168,4 +161,3 @@ e_grade=1
 fdss_level_2g=4
 fdss_level_5g=4
 fdss_interp_en=1
-

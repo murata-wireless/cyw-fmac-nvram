@@ -61,7 +61,7 @@ tssipos5g=1
 tssipos2g=1
 femctrl=0
 pa2ga0=-188,5529,-658
-pa5ga0=-153,5976,-697,-153,5784,-684,-155,5563,-667,-167,5748,-688
+pa5ga0=-153,5976,-697,-153,5784,-684,-155,5691,-677,-167,5748,-688
 pdoffsetcckma0=0xf
 pdoffset2g40ma0=0x9
 pdoffset40ma0=0xffff
@@ -105,8 +105,8 @@ mcsbw805gpo_ht=0x22222222
 #        5G BW80 VHT/HT temp offset, 0.5dBm/step, rate(C9,C8,M7,M6,M5,M4,M3,M2-0)
 
 # RF switch control
-swctrlmap_2g=0x00001131,0x00001131,0x00001131,0x313131,0x1ff
-swctrlmap_5g=0x00201131,0x40404040,0x00001131,0x313131,0x1ff
+swctrlmap_2g=0x00000000,0x00000000,0x00000000,0x000000,0x1ff
+swctrlmap_5g=0x10101010,0x40404040,0x00000000,0x000000,0x1ff
 swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 fem_table_init_val=0x1131,0x1131
@@ -116,7 +116,7 @@ nb_rxattn=0x0303
 nb_bbmult=0x3948
 nb_eps_offset=0x01e601ea
 # Enable Analytic PAPD mode
-#papdmode=1
+papdmode=1
 # RSSI adjust
 rssi_delta_2g_c0=-2,-2,-2,-2
 rssi_delta_5gl_c0=-2,-2,-2,-2,-1,-1
