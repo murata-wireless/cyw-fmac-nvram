@@ -30,11 +30,11 @@ AvVmidIQcal=0x2,0xa8
 cckpwroffset0=5
 
 # PPR params
-maxp2ga0=84
+maxp2ga0=74
 txpwrbckof=6
 cckbw202gpo=0
-legofdmbw202gpo=0x66111111
-mcsbw202gpo=0x77711111
+legofdmbw202gpo=0x88888888
+mcsbw202gpo=0xaaaaaaaa
 propbw202gpo=0xdd
 
 # OFDM IIR :
