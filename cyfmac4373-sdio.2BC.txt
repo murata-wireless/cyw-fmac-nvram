@@ -69,22 +69,23 @@ pdoffset80ma0=0xeeee
 extpagain5g=2
 extpagain2g=2
 AvVmid_c0=1,130,0,160,0,160,0,160,0,160
-maxp2ga0=76
+maxp2ga0=78
 maxp5ga0=70,70,70,70
 cckbw202gpo=0x2222
-dot11agofdmhrbw202gpo=0x4222
-ofdmlrbw202gpo=0x5522
-mcsbw202gpo=0xaa986655
-mcsbw402gpo=0xaa986655
-mcsbw205glpo=0xaa665523
-mcsbw205gmpo=0xaa665523
-mcsbw205ghpo=0xaa665523
-mcsbw405glpo=0x88665544
-mcsbw405gmpo=0x88665544
-mcsbw405ghpo=0x88665544
-mcsbw805glpo=0xDA887722
-mcsbw805gmpo=0xDA887722
-mcsbw805ghpo=0xDA887722
+dot11agofdmhrbw202gpo=0x4400
+ofdmlrbw202gpo=0x0000
+mcsbw202gpo=0x88888444
+mcsbw402gpo=0x88655333
+mcsbw205glpo=0xA6444440
+mcsbw205gmpo=0xA6444440
+mcsbw205ghpo=0xA6444440
+mcsbw405glpo=0xAA666664
+mcsbw405gmpo=0xAA666664
+mcsbw405ghpo=0xAA666664
+mcsbw805glpo=0xAA666666
+mcsbw805gmpo=0xAA666666
+mcsbw805ghpo=0xAA666666
+
 
 # RF switch control
 #swctrlmap_2g=0x00001131,0x00001131,0x00001131,0x313131,0x1ff
