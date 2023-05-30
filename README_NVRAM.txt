@@ -8,7 +8,7 @@ The following module NVRAM default files are included in this folder:
 Cypress Chipset		Default		Options		WLAN Interface    Devices Supported	  	Notes
 ===============		=======		=======		==============    =====================   	==========================================================================================
 CYW54591		1XA		N/A		PCIe              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
-CYW54591		2BZ		N/A		SDIO              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
+CYW54590		2BZ		N/A		SDIO              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
 CYW4356			1CX		N/A		PCIe              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
 CYW4354			1BB		N/A             SDIO              802.11a/b/g/n/ac MIMO		Strategic customer engagement only. Indoor/Station mode only
 CYW43455		1MW		1LC, 1HK        SDIO              802.11a/b/g/n/ac		1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only. Indoor/Station mode only
@@ -46,3 +46,5 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac54591-sdio.2ant.2BZ.txt |   f9255018ed4954b96b8d1eda8bab1a0f | 
 | cyfmac54591-sdio.3ant.2BZ.txt |   ee1c0ab8a0ffbc4d8aad5ae21d006b9c | 
 ----------------------------------------------------------------------
+
+Note: Same NVRAM file (cyfmac54591-sdio.txt) is used for 2BZ. 2BZ is based out of IFX chipset 54590.
