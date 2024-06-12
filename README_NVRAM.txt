@@ -5,21 +5,23 @@ Note that the FMAC driver loads a specific NVRAM filename when coming up: "cyfma
 This means that for any Murata modules which share the same chipset, we can only have one NVRAM file present in the default folder: "/lib/firmware/cypress".
 The following module NVRAM default files are included in this folder: 
 
-Cypress Chipset		Default		Options		WLAN Interface    Devices Supported	  	Notes
+Cypress Chipset		Default		Options		WLAN Interface    Devices Supported	  	             Notes
 ===============		=======		=======		==============    =====================   	==========================================================================================
-CYW54591		1XA		N/A		PCIe              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
-CYW54590		2BZ		N/A		SDIO              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
-CYW4356			1CX		N/A		PCIe              802.11a/b/g/n/ac MIMO         Indoor/Station mode only
-CYW4354			1BB		N/A             SDIO              802.11a/b/g/n/ac MIMO		Strategic customer engagement only. Indoor/Station mode only
-CYW43455		1MW		1LC, 1HK        SDIO              802.11a/b/g/n/ac		1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only. Indoor/Station mode only
-CYW4373                 2AE		N/A		SDIO              802.11a/b/g/n/ac              Indoor/Station mode only
-CYW43012		1LV		N/A             SDIO              802.11a/b/g/n/ac-friendly	"802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
-CYW43430/CYW4343W	1DX		1LN             SDIO              802.11b/g/n                   Indoor/Station mode only
-CYW43439                1YN		N/A		SDIO              802.11b/g/n                   Indoor/Station mode only
-CYW43364                1FX             N/A             SDIO              802.11b/g/n			Same WLAN core as 1DX. Indoor/Station mode only
-CYW4339			ZP		1CK             SDIO              802.11a/b/g/n/ac		Legacy module; No longer supported.
-CYW43340/CYW43341	1BW		N/A             SDIO              802.11b/g/n			Legacy module; No longer supported.
-CYW43362		SN8000		N/A	        SDIO              802.11b/g/n			Legacy module; No longer supported.
+CYW54591             1XA		N/A	             PCIe         802.11a/b/g/n/ac MIMO     Indoor/Station mode only
+CYW54590             2BZ		N/A	             SDIO         802.11a/b/g/n/ac MIMO     Indoor/Station mode only
+CYW4356              1CX		N/A	             PCIe         802.11a/b/g/n/ac MIMO     Indoor/Station mode only
+CYW4354              1BB		N/A              SDIO         802.11a/b/g/n/ac MIMO		Strategic customer engagement only. Indoor/Station mode only
+CYW43455             1MW		1LC, 1HK         SDIO         802.11a/b/g/n/ac		    1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only. Indoor/Station mode only
+CYW4373              2AE		N/A	             SDIO         802.11a/b/g/n/ac          Indoor/Station mode only
+CYW43012             1LV		N/A              SDIO         802.11a/b/g/n/ac-friendly	"802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
+CYW43022             2GF		N/A              SDIO         802.11a/b/g/n/ac-friendly	"802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
+CYW43430/CYW4343W    1DX		1LN              SDIO         802.11b/g/n               Indoor/Station mode only
+CYW43439             1YN        N/A	             SDIO         802.11b/g/n               Indoor/Station mode only
+CYW43364             1FX        N/A              SDIO         802.11b/g/n			    Same WLAN core as 1DX. Indoor/Station mode only
+CYW4339			     ZP	        1CK              SDIO         802.11a/b/g/n/ac		    Legacy module; No longer supported.
+CYW43340/CYW43341	 1BW        N/A              SDIO         802.11b/g/n			    Legacy module; No longer supported.
+CYW43362             SN8000		N/A	             SDIO         802.11b/g/n			    Legacy module; No longer supported.
+
 
 
 The following table lists out the "md5sum" for all the NVRAM files.
@@ -32,6 +34,7 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac43455-sdio.1MW.txt      |   03bf056ef1349b8791259f67e00c4bcc |
 | cyfmac43362-sdio.SN8000.txt   |   3babb627c9b45d71ae3433a666863bf9 |
 | cyfmac43012-sdio.1LV.txt      |   20c7984a20b6ffcd15a491775cfee847 |
+| cyfmac43022-sdio.2GF.txt      |   0a9d76323ebc2a8ba677dee51d07f09a |
 | cyfmac4339-sdio.ZP.txt        |   073456f2106e2bb1f4564bdfcca2ca36 |
 | cyfmac43430-sdio.1FX.txt      |   ecee52eb58fd9921398ca5179e096949 |
 | cyfmac43455-sdio.1HK.txt      |   9b2a8bbfbf24a442d9013cd3a03ca4b1 |
