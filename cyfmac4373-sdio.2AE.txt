@@ -3,6 +3,7 @@
 # Sample variables file for CYW94373EWLSDUSBS reference board  
 # 1. 04/30/2020 Intial release with new cyw4373e specific board ID and MAC address. Referenced to cyw94373wlsdusb_p307
 # 2. Adding new nvram for Rev2.0.  Migrated nvram from cyw94373ewlsdusbs_p100.txt by updating board name only.  
+# 3. Adding OOB setting and antenna diversity setting.
 
 
 NVRAMRev=$Rev: 727958 $
@@ -109,6 +110,13 @@ swctrlmap_2g=0x00000000,0x00000000,0x00000000,0x000000,0x1ff
 swctrlmap_5g=0x10101010,0x40404040,0x00000000,0x000000,0x1ff
 swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+
+#Antenna diversity Switch control map
+#swctrlmap_2g=0x00200020,0x00200020,0x00000000,0x000000,0x1ff
+#swctrlmap_5g=0x10301030,0x40604060,0x00000000,0x000000,0x1ff
+#swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+#swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+
 fem_table_init_val=0x1131,0x1131
 nb_papdcalidx=0x280f
 nb_txattn=0x0303
@@ -127,18 +135,27 @@ rssi_delta_5gh_c0=-1,-1,-2,-2,0,0
 # WoWL_GPIO/HOST_WAKE settings
 #wowl_gpio=0
 #wowl_polarity=1
+muxenab=0x10
+sd_gpout=0
+sd_gpval=1
+sd_oobonly=1
+
+#wowl
+wowl_gpio=0
+wowl_gpiopol=1
 
 # ATE related
 # First read from OTP , if value is 0 then force rcal value to static in driver
 ATErcalmode=0
 
-swdiv_en=1 #To enable SW-DIV feature
-swdiv_gpio=0
-swdiv_swctrl_en=2
-swdiv_swctrl_ant0=0
-swdiv_swctrl_ant1=1
-swdiv_antmap2g_main=1
-swdiv_antmap5g_main=1
+swdiv_en=0
+#swdiv_en=1 #To enable SW-DIV feature
+#swdiv_gpio=0
+#swdiv_swctrl_en=2
+#swdiv_swctrl_ant0=0
+#swdiv_swctrl_ant1=1
+#swdiv_antmap2g_main=1
+#swdiv_antmap5g_main=1
 
 swdiv_snrlim=290 #Only enable sw_div if the snr on present antenna is less than 290/8=36.25
 swdiv_thresh=2000 #No.of rxpkts threshold
