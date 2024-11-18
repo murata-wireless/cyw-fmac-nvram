@@ -41,4 +41,5 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac5557x-pcie_sdio.dant.2EA_2EC.txt|   bc8aa147f660b4bcc8d4261f37d7e5e2 |
 ------------------------------------------------------------------------------
 
-Note: Same NVRAM file (cyfmac54591-sdio.txt) is used for 2BZ. 2BZ is based out of IFX chipset 54590.
+Note: (1) Same NVRAM file (cyfmac54591-sdio.txt) is used for 1XA and 2BZ. 2BZ is based out of IFX chipset 54590.
+      (2) Same NVRAM files (cyfmac5557x-pcie_sdio.sant.2EA_2EC.txt/cyfmac5557x-pcie_sdio.dant.2EA_2EC.txt) are used for 2EA and 2EC. 2EC is based out of IFX chipset CYW55571.
