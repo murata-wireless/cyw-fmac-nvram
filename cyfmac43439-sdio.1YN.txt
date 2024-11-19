@@ -59,7 +59,7 @@ wl0id=0x431b
 deadman_to=0xffffffff
 # muxenab: 0x1 for UART enable, 0x10 for HOST WAKE INT enable, 0x11 for both enable
 # Power cycle required if change
-muxenab=0x1
+muxenab=0x11
 # CLDO PWM voltage settings - 0x4 - 1.1 volt
 #cldo_pwm=0x4
 
@@ -79,3 +79,4 @@ bt_default_ant=0
 #swdiv_gpio=2 
 
 tempbased_duty_cycle_en=0
+# End of NVRAM - do not remove this line #
