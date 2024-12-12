@@ -17,7 +17,6 @@ CYW43430/CYW4343W    1DX		1LN                  SDIO             802.11b/g/n     
 CYW43439             1YN                N/A	             SDIO             802.11b/g/n                       Indoor/Station mode only
 CYW43364             1FX                N/A                  SDIO             802.11b/g/n			Same WLAN core as 1DX. Indoor/Station mode only
 CYW43340/CYW43341    1BW                N/A                  SDIO             802.11b/g/n			Legacy module; No longer supported.
-CYW5557x             2EA/2EC                                 PCIe/SDIO        802.11a/b/g/n/ac                  Indoor/Station mode only
 
 
 The following table lists out the "md5sum" for all the NVRAM files.
@@ -37,9 +36,6 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac4373-sdio.2BC.txt               |   19b21a45ad1174545fb14992e3aa5dd8 |
 | cyfmac54591-sdio.2ant.2BZ.txt         |   f9255018ed4954b96b8d1eda8bab1a0f | 
 | cyfmac54591-sdio.3ant.2BZ.txt         |   ee1c0ab8a0ffbc4d8aad5ae21d006b9c |
-| cyfmac5557x-pcie_sdio.sant.2EA_2EC.txt|   5598eee53dfcc3b0289c9a23cf88e038 |
-| cyfmac5557x-pcie_sdio.dant.2EA_2EC.txt|   bc8aa147f660b4bcc8d4261f37d7e5e2 |
 ------------------------------------------------------------------------------
 
 Note: (1) Same NVRAM file (cyfmac54591-sdio.txt) is used for 1XA and 2BZ. 2BZ is based out of IFX chipset 54590.
-      (2) Same NVRAM files (cyfmac5557x-pcie_sdio.sant.2EA_2EC.txt/cyfmac5557x-pcie_sdio.dant.2EA_2EC.txt) are used for 2EA and 2EC. 2EC is based out of IFX chipset CYW55571.
