@@ -9,6 +9,7 @@
 *5.7/29/2020 Changed lpflags=0x28 to 0x00 and added lhlgpio_cfg=0x00000020,0x00000000
 *6.9/12/2023 Changed RF-related contents refering to Type1LV
 *7. 3/5/2024 Change lpflags=0x28 to 0x00
+*8. 8/2/2024 Add Wake-up Parameter
 
 NVRAMRev=$Rev:727703$
 sromrev=11
@@ -140,3 +141,16 @@ swdiv_antmap5g_main=1
 swdiv_snrlim=10000 #Onlyenablesw_divifthesnronpresentantennaislessthan10000/8=1250
 swdiv_thresh=3000 #No.ofrxpktsthreshold
 swdiv_snrthresh=24 #Differencebetweenantenna'ssnrisgreaterthan24/8=3dB,thenshifttheantennas
+
+#Hostwake
+#muxenab=0x10
+muxenab=0x01
+sd_gpout=0
+sd_gpval=1
+sd_oobonly=1
+
+#wowl
+wowl_gpio=0
+wowl_gpiopol=1
+
+
