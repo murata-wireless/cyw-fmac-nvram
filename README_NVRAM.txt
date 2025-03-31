@@ -33,7 +33,7 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac43430-sdio.1DX.txt              |   ecee52eb58fd9921398ca5179e096949 |
 | cyfmac54591-pcie.1XA.txt              |   edb53ed8f965ed562163414ed3edc8af |
 | cyfmac43439-sdio.1YN.txt              |   e71588b34ab32409d52622355353f76c |
-| cyfmac4373-sdio.2AE.txt               |   c7e166468bdb16e69057de93ba345faf |
+| cyfmac4373-sdio.2AE.txt               |   a42dd6b9c37c1e950c2aa840bd5f6c38 |
 | cyfmac4373-sdio.2BC.txt               |   19b21a45ad1174545fb14992e3aa5dd8 |
 | cyfmac55500-sdio.2FY.txt              |   028bcfc968e84ab069e77d1a8ddf4044 |
 | cyfmac54591-sdio.2ant.2BZ.txt         |   f9255018ed4954b96b8d1eda8bab1a0f | 
