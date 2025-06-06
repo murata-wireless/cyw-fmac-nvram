@@ -1,8 +1,8 @@
 # FVIN:1.1.1.1 HMN:P2ML9990_S HVIN:LBEE5XV2EA_SANT
 # FVIN:1.1.1.4 HMN:P2ML9990_S HVIN:LBEE5XV2EC_SANT
-# Type-2EA/2EC rev3.1.2 NVRAM updated
+# Type-2EA/2EC rev4.0.2 NVRAM updated
 # Update in Murata,Parameter is common to 2EA-802 and 2EC-001
-# For after Indrik FW Version:18.53.366.19 / Applicable to 2EA-802 and 2EC-001
+# For after Jaculus FW Version:18.53.421.22 / Applicable to 2EA-802 and 2EC-001
 
 NVRAMRev=$Rev:  $
 sromrev=11
@@ -124,7 +124,7 @@ fdss_level_6g=9,9
 
 #LPB related
 leg_preamble_boost=6,6,0
-lpb_comp=6
+lpb_comp=0x66666666,0x66666666,0x66666666
 
 #PAPRR Related
 paprdis=0
@@ -169,7 +169,6 @@ txidxcap6g=0
 #2G OFDM
 pa2ga0=-108,6437,-671
 pa2ga1=-59,6202,-626
-
 #2G CCK
 pa2ga2=-107,6780,-730
 pa2ga3=-46,6732,-718
@@ -188,8 +187,8 @@ maxp2ga1=84
 maxp5ga0=72,72,72,72
 maxp5ga1=72,72,72,72
 #Max Power on 6G UNII-5/6 and UNII-7/8
-maxp6ga0=66,62
-maxp6ga1=66,62
+maxp6ga0=66,66,62,62
+maxp6ga1=66,66,62,62
 subband5gver=0x4
 paparambwver=3
 cckpwroffset0=1
@@ -250,9 +249,11 @@ mcs8poexp=0
 mcs9poexp=0
 mcs10poexp=0
 # 1024QAM rates' offset for 6GHz UNII-5/6
-mcs1024qam6glpo=0xcccccc
+mcs1024qam6glpo=0x00cccccc,0x00cccccc
 # 1024QAM rates' offset for 6GHz UNII-7/8
-mcs1024qam6gmpo=0xaaaaaa
+mcs1024qam6gmpo=0x00aaaaaa,0x00aaaaaa
+# 1024QAM extra PPR backoff for Spur channel for 6G U8,U7,U6,U5
+spurchbackoff1024qam6g=0x00000000
 
 #UL-OFDMA PPR's accros RU's
 ruppr2g20bpska0=0x10842
@@ -348,6 +349,17 @@ clb_swctrl_smask_ant0=0x33f
 clb_swctrl_smask_ant1=0x3f7
 muxenab=0x10
 
+#host wake
+sd_gpout=0
+sd_gpval=1
+sd_oobonly=1
+
+#wakeon wlan
+wowl_gpio=0
+wowl_gpiopol=1
+
+
+
 #BT Coex 1:TDM
 btc_mode=1
 
@@ -425,7 +437,6 @@ ed_thresh6g=-71,-71
 # energy detect threshold for EU
 eu_edthresh2g=-65
 eu_edthresh5g=-71
-eu_edthresh6g=-71
 eu_edthresh6g=-71,-71
 
 btldopu=0

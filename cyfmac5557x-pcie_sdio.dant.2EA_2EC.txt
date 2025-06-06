@@ -1,9 +1,8 @@
 # FVIN:1.1.2.1 HMN:P2ML9990_D HVIN:LBEE5XV2EA_DANT
 # FVIN:1.1.2.4 HMN:P2ML9990_D HVIN:LBEE5XV2EC_DANT
-# Type-2EA/2EC rev3.1.2 NVRAM updated
+# Type-2EA/2EC rev4.0.2 NVRAM updated
 # Update in Murata,Parameter is common to 2EA-802 and 2EC-001
-# For after Indrik FW Version:18.53.366.19 / Applicable to 2EA-802 and 2EC-001
-
+# For after Jaculus FW Version:18.53.421.22 / Applicable to 2EA-802 and 2EC-001
 
 NVRAMRev=$Rev:  $
 sromrev=11
@@ -104,7 +103,6 @@ rssi_delta_2gb4=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 #Related to FW Download. Host may use this
 nocrc=1
-
 otpimagesize=502
 
 xtalfreq=37400
@@ -126,7 +124,7 @@ fdss_level_6g=9,9
 
 #LPB related
 leg_preamble_boost=6,6,0
-lpb_comp=6
+lpb_comp=0x66666666,0x66666666,0x66666666
 
 #PAPRR Related
 paprdis=0
@@ -171,13 +169,14 @@ txidxcap6g=0
 #2G OFDM
 pa2ga0=-108,6437,-671
 pa2ga1=-59,6202,-626
-
 #2G CCK
 pa2ga2=-107,6780,-730
 pa2ga3=-46,6732,-718
+
 #5G PA Params LL,LH,HL,HH
 pa5ga0=-191,6121,-746,-192,5566,-686,-202,5395,-670,-194,5868,-721
 pa5ga1=-200,5619,-710,-171,5554,-658,-206,5076,-635,-177,6087,-736
+
 #6G PA Params UNII-5,6,7,8
 pa6ga0=-149,6344,-721,-175,6197,-748,-183,5973,-737,-212,5514,-705
 pa6ga1=-225,5510,-706,-200,5573,-681,-202,5903,-729,-229,5547,-715
@@ -188,8 +187,8 @@ maxp2ga1=84
 maxp5ga0=72,72,72,72
 maxp5ga1=72,72,72,72
 #Max Power on 6G UNII-5/6 and UNII-7/8
-maxp6ga0=66,62
-maxp6ga1=66,62
+maxp6ga0=66,66,62,62
+maxp6ga1=66,66,62,62
 subband5gver=0x4
 paparambwver=3
 cckpwroffset0=1
@@ -250,14 +249,13 @@ mcs8poexp=0
 mcs9poexp=0
 mcs10poexp=0
 # 1024QAM rates' offset for 6GHz UNII-5/6
-mcs1024qam6glpo=0xcccccc
+mcs1024qam6glpo=0x00cccccc,0x00cccccc
 # 1024QAM rates' offset for 6GHz UNII-7/8
-mcs1024qam6gmpo=0xaaaaaa
+mcs1024qam6gmpo=0x00aaaaaa,0x00aaaaaa
+# 1024QAM extra PPR backoff for Spur channel for 6G U8,U7,U6,U5
+spurchbackoff1024qam6g=0x00000000
 
 #UL-OFDMA PPR's accros RU's
-
-
-
 ruppr2g20bpska0=0x10842
 ruppr2g20bpska1=0x10842
 ruppr2g20qpska0=0x21084
@@ -331,9 +329,6 @@ ltecxpadnum=0x0504
 ltecxfnsel=0x44
 ltecxgcigpio=0x04
 
-
-
-
 # SWCTRL Related
 swctrlmap_2g=0x00000010,0x00000120,0x00000010,0x000000,0x33f
 swctrlmapext_2g=0x00000202,0x00000000,0x00000000,0x000000,0x3f7
@@ -341,7 +336,6 @@ swctrlmapext_2g=0x00000202,0x00000000,0x00000000,0x000000,0x3f7
 swctrlmap_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 swctrlmapext_5g=0x00000000,0x00000202,0x00000000,0x000000,0x000
 fem_table_init_val=0x00000010,0x00000000
-
 fem_table_init_val_ext=0x00000202,0x00000000
 
 clb2gslice0core0=0x038
@@ -353,18 +347,24 @@ clb5gslice0core1=0x200
 btc_prisel_ant_mask=0x3
 clb_swctrl_smask_ant0=0x33f
 clb_swctrl_smask_ant1=0x3f7
-
-
-
-
 muxenab=0x10
+
+#host wake
+sd_gpout=0
+sd_gpval=1
+sd_oobonly=1
+
+#wakeon wlan
+wowl_gpio=0
+wowl_gpiopol=1
+
+
 
 #BT Coex 1:TDM
 btc_mode=5
 
 # --- PAPD Cal related params ----
 # 0:NBPAPD 1:WBPAPD
-
 txwbpapden=1
 
 # WB papd cal params
@@ -437,7 +437,6 @@ ed_thresh6g=-71,-71
 # energy detect threshold for EU
 eu_edthresh2g=-65
 eu_edthresh5g=-71
-eu_edthresh6g=-71
 eu_edthresh6g=-71,-71
 
 btldopu=0
@@ -484,11 +483,14 @@ btcdyn_dsns_row0=5,12,0,-50,-65
 btcdyn_wlpwr_val=2,4,6,8,10,12,14,16
 btcdyn_wlpwr_thresh=-10,-20,-30,-40,-50,-60,-70
 
+
 # idx 0: PPR temp thresh, default 150
 # idx 1: PPR temp thresh hysteresis, default 15
+
 ppr_hitemp_offset=70,10
 # CCK high temp offset, 0.5dBm/step, rate(11,5.5,2,1Mbps)
 cckbw202gpo_ht=0x6666
+
 # OFDM temp offset for Legacy rates for 2G/5G/6G, 0.5dBm/step, rate(54,48,36,24,18,12,9,6Mbps)
 ofdmbw202gpo_ht=0x65555533
 ofdmbw205gpo_ht=0x66666666
