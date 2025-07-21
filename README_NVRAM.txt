@@ -18,7 +18,7 @@ CYW43439             1YN                N/A	             SDIO             802.11
 CYW43364             1FX                N/A                  SDIO             802.11b/g/n			Same WLAN core as 1DX. Indoor/Station mode only
 CYW43340/CYW43341    1BW                N/A                  SDIO             802.11b/g/n			Legacy module; No longer supported.
 CYW5557x             2EA/2EC                                 PCIe/SDIO        802.11a/b/g/n/ac                  Indoor/Station mode only
-
+CYW55500             2FY/2GY            N/A                  SDIO             802.11a/b/g/n/ac/ax               Indoor/Station mode only
 
 The following table lists out the "md5sum" for all the NVRAM files.
 ------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac43340-sdio.1BW.txt              |   7a1a7dbfd18f8f7a9b4086c920b819a1 |
 | cyfmac43430-sdio.1DX.txt              |   ecee52eb58fd9921398ca5179e096949 |
 | cyfmac54591-pcie.1XA.txt              |   edb53ed8f965ed562163414ed3edc8af |
-| cyfmac43439-sdio.1YN.txt              |   e71588b34ab32409d52622355353f76c |
+| cyfmac43439-sdio.1YN.txt              |   e71588b34ab32409d52622355353f76c |  
 | cyfmac4373-sdio.2AE.txt               |   a42dd6b9c37c1e950c2aa840bd5f6c38 |
 | cyfmac4373-sdio.2BC.txt               |   19b21a45ad1174545fb14992e3aa5dd8 |
 | cyfmac55500-sdio.2FY.txt              |   028bcfc968e84ab069e77d1a8ddf4044 |
@@ -40,6 +40,8 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac54591-sdio.3ant.2BZ.txt         |   ee1c0ab8a0ffbc4d8aad5ae21d006b9c |
 | cyfmac5557x-pcie_sdio.sant.2EA_2EC.txt|   43902ab9f0a8ee358e0ff2532c2ec299 |
 | cyfmac5557x-pcie_sdio.dant.2EA_2EC.txt|   6ec92c9412809420171c964c095d5100 |
+| cyfmac55500-sdio.2FY.txt              |   31a35bf9053fb0e8cb312b30ae659010 |
+| cyfmac55500-sdio.2GY.txt              |   6150e5e587e1a48c1414f9713bc4fca9 |
 ------------------------------------------------------------------------------
 
 Note: (1) Same NVRAM file (cyfmac54591-sdio.txt) is used for 1XA and 2BZ. 2BZ is based out of IFX chipset 54590.
