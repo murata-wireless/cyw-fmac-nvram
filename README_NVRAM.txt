@@ -9,16 +9,16 @@ Cypress Chipset		Default		Options		WLAN Interface    Devices Supported	  	      
 ===============		=======		=======		==============    =====================   	==========================================================================================
 CYW54591             1XA		N/A	             PCIe             802.11a/b/g/n/ac MIMO             Indoor/Station mode only
 CYW54590             2BZ		N/A	             SDIO             802.11a/b/g/n/ac MIMO             Indoor/Station mode only
-CYW43455             1MW		1LC, 1HK             SDIO             802.11a/b/g/n/ac		        1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only. Indoor/Station mode only
-CYW4373              2AE		N/A	             SDIO             802.11a/b/g/n/ac                  Indoor/Station mode only
-CYW43012             1LV		N/A                  SDIO             802.11a/b/g/n/ac-friendly	        "802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
-CYW43022             2GF		N/A                  SDIO             802.11a/b/g/n/ac-friendly	        "802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
-CYW43430/CYW4343W    1DX		1LN                  SDIO             802.11b/g/n                       Indoor/Station mode only
-CYW43439             1YN                N/A	             SDIO             802.11b/g/n                       Indoor/Station mode only
-CYW43364             1FX                N/A                  SDIO             802.11b/g/n			Same WLAN core as 1DX. Indoor/Station mode only
-CYW43340/CYW43341    1BW                N/A                  SDIO             802.11b/g/n			Legacy module; No longer supported.
-CYW5557x             2EA/2EC                                 PCIe/SDIO        802.11a/b/g/n/ac                  Indoor/Station mode only
-CYW55500             2FY/2GY            N/A                  SDIO             802.11a/b/g/n/ac/ax               Indoor/Station mode only
+CYW43455             1MW		1LC, 1HK         SDIO             802.11a/b/g/n/ac                  1MW - Mass Market; 1LC, 1HK - Strategic customer engagement only. Indoor/Station mode only
+CYW4373              2AE		N/A	             SDIO/USB         802.11a/b/g/n/ac                  Indoor/Station mode only
+CYW43012             1LV		N/A              SDIO             802.11a/b/g/n/ac-friendly	        "802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
+CYW43022             2GF		N/A              SDIO             802.11a/b/g/n/ac-friendly	        "802.11ac friendly"; MAX 20 MHz Bandwidth. Indoor/Station mode only
+CYW43430/CYW4343W    1DX		1LN              SDIO             802.11b/g/n                       Indoor/Station mode only
+CYW43439             1YN        N/A              SDIO             802.11b/g/n                       Indoor/Station mode only
+CYW43364             1FX        N/A              SDIO             802.11b/g/n                       Same WLAN core as 1DX. Indoor/Station mode only
+CYW43340/CYW43341    1BW        N/A              SDIO             802.11b/g/n                       Legacy module; No longer supported.
+CYW5557x             2EA/2EC    N/A              PCIe/SDIO        802.11a/b/g/n/ac/ax               Indoor/Station mode only
+CYW55513             2FY/2GY    N/A              SDIO             802.11a/b/g/n/ac/ax               Indoor/Station mode only
 
 The following table lists out the "md5sum" for all the NVRAM files.
 ------------------------------------------------------------------------------
@@ -40,8 +40,8 @@ The following table lists out the "md5sum" for all the NVRAM files.
 | cyfmac54591-sdio.3ant.2BZ.txt         |   ee1c0ab8a0ffbc4d8aad5ae21d006b9c |
 | cyfmac5557x-pcie_sdio.sant.2EA_2EC.txt|   43902ab9f0a8ee358e0ff2532c2ec299 |
 | cyfmac5557x-pcie_sdio.dant.2EA_2EC.txt|   6ec92c9412809420171c964c095d5100 |
-| cyfmac55500-sdio.2FY.txt              |   31a35bf9053fb0e8cb312b30ae659010 |
-| cyfmac55500-sdio.2GY.txt              |   6150e5e587e1a48c1414f9713bc4fca9 |
+| cyfmac55500-sdio.2FY.txt              |   b5599974b30863519e25bd7cffc02dc3 |
+| cyfmac55500-sdio.2GY.txt              |   86155eaf43a1a678612732a018b1f3c7 |
 ------------------------------------------------------------------------------
 
 Note: (1) Same NVRAM file (cyfmac54591-sdio.txt) is used for 1XA and 2BZ. 2BZ is based out of IFX chipset 54590.

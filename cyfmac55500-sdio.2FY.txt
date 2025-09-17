@@ -1,6 +1,7 @@
 #CYW955513WLIPA
 #802.11ax 1x1 Tri-Band HE20 WiFi 6/6e + BT/BLE 5.2 Combo with SDIO/SPI interface
-#2FY_28_10_387_13
+#2FY_28_10_387_16
+#Update WL_HOST_WAKE out of band parameter.
 NVRAMRev=$Rev: c1fd6902ce24542976c3f1855ad968cfa9bdf410 $
 sromrev=11
 boardrev=0x1201
@@ -268,6 +269,21 @@ ltecxgcigpio=0x04
 #OOB params
 #device_wake_opt=1
 #host_wake_opt=0
+# WoWL_GPIO/HOST_WAKE 
+#wowl_gpio=0
+#wowl_polarity=1
+adjpaldo=0x4
+muxenab=0x10
+sd_gpout=0
+sd_gpval=1
+sd_oobonly=1
+
+#wowl
+wowl_gpio=0
+wowl_extgpio=0
+wowl_gpiopol=1
+
+
 
 # SWCTRL Related
 swctrlmap_5g=0x08080808,0x02020202,0x08080808,0x010008,0x00f							
