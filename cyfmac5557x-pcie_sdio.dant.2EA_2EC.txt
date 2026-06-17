@@ -355,8 +355,8 @@ sd_gpval=1
 sd_oobonly=1
 
 #wakeon wlan
-wowl_gpio=0
-wowl_gpiopol=1
+#wowl_gpio=0
+#wowl_gpiopol=1
 
 
 
