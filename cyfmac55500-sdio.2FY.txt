@@ -279,9 +279,9 @@ sd_gpval=1
 sd_oobonly=1
 
 #wowl
-wowl_gpio=0
-wowl_extgpio=0
-wowl_gpiopol=1
+#wowl_gpio=0
+#wowl_extgpio=0
+#wowl_gpiopol=1
 
 
 
@@ -302,7 +302,7 @@ clb_swctrl_smask_ant0=0x3ff
 # 2 Ant hyb/par following comment above
 #btc_prisel_ant_mask=0x3
 #clb_swctrl_smask_ant0=0x34f
-muxenab=0x10
+#muxenab=0x10
 
 #BT Coex 1:TDM
 btc_mode=1

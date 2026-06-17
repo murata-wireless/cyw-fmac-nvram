@@ -142,8 +142,8 @@ sd_gpval=1
 sd_oobonly=1
 
 #wowl
-wowl_gpio=0
-wowl_gpiopol=1
+#wowl_gpio=0
+#wowl_gpiopol=1
 
 # ATE related
 # First read from OTP , if value is 0 then force rcal value to static in driver
